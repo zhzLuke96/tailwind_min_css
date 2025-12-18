@@ -1,0 +1,6 @@
+@import "tailwindcss";
+@import "tailwindcss/index.css";
+/* @import "tailwindcss/preflight.css"; */
+@import "tailwindcss/theme.css";
+@import "tailwindcss/utilities.css";
+@source "./classes/all.html";

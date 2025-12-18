@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Form - Tailwind Demo</title>
+  <link rel="stylesheet" href="./dist/tailwind.min.css">
+  <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+</head>
+
+<body class="bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 min-h-screen flex items-center justify-center">
+
+  <div class="bg-white rounded-2xl shadow-2xl p-10 w-full max-w-md">
+    <h2 class="text-3xl font-bold text-center text-gray-800 mb-6">Welcome Back</h2>
+
+    <form class="space-y-6">
+      <div>
+        <label class="block text-gray-700 font-medium mb-2" for="email">Email</label>
+        <input type="email" id="email" placeholder="you@example.com"
+          class="w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-purple-500 transition" />
+      </div>
+
+      <div>
+        <label class="block text-gray-700 font-medium mb-2" for="password">Password</label>
+        <input type="password" id="password" placeholder="********"
+          class="w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-purple-500 transition" />
+      </div>
+
+      <div class="flex items-center justify-between">
+        <label class="flex items-center space-x-2 text-gray-700">
+          <input type="checkbox" class="form-checkbox h-4 w-4 text-purple-500">
+          <span>Remember me</span>
+        </label>
+        <a href="#" class="text-purple-500 hover:underline text-sm">Forgot password?</a>
+      </div>
+
+      <button type="submit"
+        class="w-full bg-purple-500 hover:bg-purple-600 text-white font-bold py-3 rounded-lg shadow-lg transition">
+        Sign In
+      </button>
+    </form>
+
+    <p class="text-center text-gray-500 mt-6">
+      Don’t have an account?
+      <a href="#" class="text-purple-500 font-semibold hover:underline">Sign Up</a>
+    </p>
+  </div>
+
+</body>
+
+</html>
